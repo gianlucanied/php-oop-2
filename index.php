@@ -80,6 +80,16 @@ class Cibo extends Products {
         
         $this -> setDataDiScadenza($datascadenza);
     }
+
+    
+    public function getDataDiScadenza() {
+
+        return $this->datascadenza;
+    }
+    public function setDataDiScadenza($datascadenza) {
+
+        $this -> datascadenza = $datascadenza;
+}
 }
 
 class Cucce extends Products {
@@ -97,12 +107,23 @@ class Cucce extends Products {
         
         $this -> setGrandezza($grandezza);
     }
+
+    public function getGrandezza() {
+
+        return $this->grandezza;
+    }
+    public function setGrandezza($grandezza) {
+
+        $this -> grandezza = $grandezza;
+}
 }
 
 
-$firstproduct = new Products("12,90", "150gr", "Biscotti", "Cane");
+$firstproduct = new Cibo ("€12,90", "150gr", "Biscotti", "Cane", "05/03/2024");
 
-$secondproduct = new Products("8,90", "100gr", "Giochino", "Gatto");
+$secondproduct = new Products("€8,90", "100gr", "Giochino", "Gatto");
+
+$thirdproduct = new Cucce ("€39,90", "4kg", "Cuccia da campagna", "Cane", "200cm x 150cm");
 
 echo "Prezzo: " . $firstproduct -> getPrezzo();
 echo "<br>";
@@ -111,6 +132,8 @@ echo "<br>";
 echo "Nome prodotto: " . $firstproduct -> getNome();
 echo "<br>";
 echo "Categoria prodotto: " . $firstproduct -> getCategoria();
+echo "<br>";
+echo "Data di scadenza: " . $firstproduct -> getDataDiScadenza();
 
 echo "<br>";
 echo "<br>";
@@ -123,4 +146,18 @@ echo "<br>";
 echo "Nome prodotto: " . $secondproduct -> getNome();
 echo "<br>";
 echo "Categoria prodotto: " . $secondproduct -> getCategoria();
+
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+echo "Prezzo: " . $thirdproduct -> getPrezzo();
+echo "<br>";
+echo "Peso: " . $thirdproduct -> getPeso();
+echo "<br>";
+echo "Nome prodotto: " . $thirdproduct -> getNome();
+echo "<br>";
+echo "Categoria prodotto: " . $thirdproduct -> getCategoria();
+echo "<br>";
+echo "Grandezza: " . $thirdproduct -> getGrandezza();
 ?>
