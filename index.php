@@ -62,11 +62,13 @@
 
 
 
-    class DogsProducts extends Products {
+    class Cibo extends Products {
         
+        public $datascadenza;
     }
 
-    class CatsProducts extends Products {
+    class Cucce extends Products {
 
+        public $grandezza;
     }
    
