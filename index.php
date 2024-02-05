@@ -20,9 +20,11 @@ class Products {
 
     
 public function getPrezzo() {
-
-    return $this -> $prezzo;
+        
+    return $this->prezzo; 
 }
+
+
 public function setPrezzo($prezzo) {
 
     $this -> prezzo = $prezzo;
@@ -31,7 +33,7 @@ public function setPrezzo($prezzo) {
 
 public function getPeso() {
 
-    return $this -> $peso;
+    return $this->peso;
 }
 public function setPeso($peso) {
 
@@ -41,7 +43,7 @@ public function setPeso($peso) {
 
 public function getNome() {
 
-    return $this -> $nome;
+    return $this->nome;
 }
 public function setNome($nome) {
 
@@ -51,7 +53,7 @@ public function setNome($nome) {
 
 public function getCategoria() {
 
-    return $this -> $categoria;
+    return $this->categoria;
 }
 public function setCategoria($categoria) {
 
@@ -98,4 +100,27 @@ class Cucce extends Products {
 }
 
 
+$firstproduct = new Products("12,90", "150gr", "Biscotti", "Cane");
+
+$secondproduct = new Products("8,90", "100gr", "Giochino", "Gatto");
+
+echo "Prezzo: " . $firstproduct -> getPrezzo();
+echo "<br>";
+echo "Peso: " . $firstproduct -> getPeso();
+echo "<br>";
+echo "Nome prodotto: " . $firstproduct -> getNome();
+echo "<br>";
+echo "Categoria prodotto: " . $firstproduct -> getCategoria();
+
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+echo "Prezzo: " . $secondproduct -> getPrezzo();
+echo "<br>";
+echo "Peso: " . $secondproduct -> getPeso();
+echo "<br>";
+echo "Nome prodotto: " . $secondproduct -> getNome();
+echo "<br>";
+echo "Categoria prodotto: " . $secondproduct -> getCategoria();
 ?>
