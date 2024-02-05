@@ -65,10 +65,36 @@
     class Cibo extends Products {
         
         public $datascadenza;
+
+        public function __construct(
+            $prezzo, $peso, $nome, $categoria, $datascadenza
+        ) {
+
+            $this -> setPrezzo($prezzo);
+            $this -> setPeso($peso);
+            $this -> setNome($nome);
+            $this -> setCategoria($categoria);
+            
+            $this -> setDataDiScadenza($datascadenza);
+        }
     }
 
     class Cucce extends Products {
 
         public $grandezza;
+
+        public function __construct(
+            $prezzo, $peso, $nome, $categoria, $grandezza
+        ) {
+
+            $this -> setPrezzo($prezzo);
+            $this -> setPeso($peso);
+            $this -> setNome($nome);
+            $this -> setCategoria($categoria);
+            
+            $this -> setGrandezza($grandezza);
+        }
     }
    
+
+?>
