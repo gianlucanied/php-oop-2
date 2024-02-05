@@ -2,47 +2,59 @@
 
     class Products {
 
-        public $cibo;
-        public $giochi;
-        public $cucce;
+        public $prezzo;
+        public $peso;
+        public $nome;
+        public $categoria;
 
         public function __construct(
-            $cibo, $giochi, $cucce
+            $prezzo, $peso, $nome, $categoria
         ) {
 
-            $this -> cibo = $cibo;
-            $this -> giochi = $giochi;
-            $this -> cucce = $cucce;
+            $this -> prezzo = $prezzo;
+            $this -> peso = $peso;
+            $this -> nome = $nome;
+            $this -> categoria = $categoria;
         }
 
         
-    public function getCibo() {
+    public function getPrezzo() {
 
-        return $this -> $cibo;
+        return $this -> $prezzo;
     }
-    public function setCibo($cibo) {
+    public function setPrezzo($prezzo) {
 
-        $this -> cibo = $cibo;
-    }
-
-    
-    public function getGiochi() {
-
-        return $this -> $giochi;
-    }
-    public function setGiochi($giochi) {
-
-        $this -> giochi = $giochi;
+        $this -> prezzo = $prezzo;
     }
 
     
-    public function getCucce() {
+    public function getPeso() {
 
-        return $this -> $cucce;
+        return $this -> $peso;
     }
-    public function setCucce($cucce) {
+    public function setPeso($peso) {
 
-        $this -> cucce = $cucce;
+        $this -> peso = $peso;
+    }
+
+    
+    public function getNome() {
+
+        return $this -> $nome;
+    }
+    public function setNome($nome) {
+
+        $this -> nome = $nome;
+    }
+
+
+    public function getCategoria() {
+
+        return $this -> $categoria;
+    }
+    public function setCategoria($categoria) {
+
+        $this -> categoria = $categoria;
     }
 
 
