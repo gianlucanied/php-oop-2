@@ -1,6 +1,7 @@
 <?php
 
     // REQUIRE
+    require_once(__DIR__ . "/models/discountTrait.php");
     require_once(__DIR__ . "/models/category.php");
     require_once(__DIR__ . "/models/product.php");
     require_once(__DIR__ . "/models/food.php");
