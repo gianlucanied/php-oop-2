@@ -11,6 +11,11 @@
     $cat_dog = new Category(1, "Cane", "https://cdn4.iconfinder.com/data/icons/eldorado-medicine/40/dog-512.png");
     $cat_cat = new Category(2, "Cat", "https://cdn3.iconfinder.com/data/icons/animal-and-tool/283/animal_and_tool-02-512.png");
 
+    // PRODUCT TEST
+    $test_prod = new Product(
+        10, "Test", "https://shop-cdn-m.mediazs.com/bilder/9/400/26635_pla_meradog_puppyknochen_10kg_9.jpg", 50, 20, $cat_cat, "10/05/2024"
+    );
+
     // PRODUCTS
     $prod_croccantini = new Food(
         1, "Croccantini", "https://shop-cdn-m.mediazs.com/bilder/9/400/26635_pla_meradog_puppyknochen_10kg_9.jpg", 35,
